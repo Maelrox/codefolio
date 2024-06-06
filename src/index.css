@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  header {
+    font-family: "Orbitron", sans-serif;
+  }
+  html {
+    font-family: "Orbitron", sans-serif;
+  }
+}
+
+.portfolio-box {
+  @apply border-2 border-white rounded-lg shadow-lg text-center text-white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-box:hover {
+  @apply shadow-xl;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-box:hover {
+  transform: rotateY(15deg) rotateX(10deg) translateZ(20px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3d3d3d; /* Grey */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gpu-stats {
+  top: 127px !important;
+}
