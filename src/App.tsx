@@ -4,7 +4,7 @@ import './index.css'; // Ensure Tailwind CSS is imported
 
 const App: React.FC = () => {
   return (
-    <div className="App bg-main-gradient ">
+    <div className="App bg-main-gradient h-lvh">
       <HomePage />
     </div>
   );

@@ -37,13 +37,10 @@ const Header: React.FC = () => {
         </button>
         <nav className={`md:flex space-x-4 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
           <a href="#" className="block md:inline-block hover:text-gray-400">
-            Home
+            Portfolio
           </a>
           <a href="#" className="block md:inline-block hover:text-gray-400">
             About
-          </a>
-          <a href="#" className="block md:inline-block hover:text-gray-400">
-            Portfolio
           </a>
           <a href="#" className="block md:inline-block hover:text-gray-400">
             Contact
