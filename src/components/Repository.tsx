@@ -55,7 +55,7 @@ const Repository: React.FC<RepositoryProps> = ({category}) => {
 
   return (
     <section className="portfolio bg-main-gradient p-2">
-      <h2 className="text-white border-b border-white pb-2 mb-4">{category}</h2>
+      <h2 className="border-b border-white mb-4">{category}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-5 gap-2">
         {repositoryItems.map((item, index) => (
           <RepositoryBox key={index} image={item.image} text={item.text} technologies={item.technologies} url={item.url} />

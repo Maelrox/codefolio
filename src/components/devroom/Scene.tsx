@@ -9,7 +9,8 @@ const Scene = ({ setCameras, tvNumber, textureUrl, updateTvImages }) => {
     const { scene } = useThree();
     const spotLightRef = useRef();
     const pointLightRef = useRef();
-  
+    const [loading, setLoading] = useState(true);
+
     // Scene custom illumination
     useEffect(() => {
       if (spotLightRef.current) {

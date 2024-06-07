@@ -7,7 +7,7 @@ interface PortfolioProps {
 }
 
 const Portfolio: React.FC<PortfolioProps> = ({ onViewChange }) => {
-  // white.jpg 
+
   const portfolioItems = [
     { icon: <FaServer />, text: 'Backend Development', view: "SpringBoot", textureUrl: "/assets/3d/springboot_background.jpg", tv:"tv4" },
     { icon: <FaLaptopCode />, text: 'Frontend Development', view: "React", textureUrl: "/assets/3d/background-react.jpg", tv:"tv2" },

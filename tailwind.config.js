@@ -8,15 +8,16 @@ export default {
       },
       colors: {
         primary: {
-          100: '#21444a',
-        },pastelPink: '#f8e8f0',
+          100: '#E2E2E2',
+        },
+        pastelPink: '#f8e8f0',
         pastelPurple: '#f0e8f6',
         pastelGray: '#f1f1f2',
         lightGray: '#e8e8e8',
         whiteish: '#f9f9f9',
       },
       backgroundImage: {
-        'main-gradient': 'linear-gradient(to bottom, #232323, #181818)',
+        'main-gradient': 'linear-gradient(to bottom, #F9F9F9, #FFFFFF)',
       },
     },
   },

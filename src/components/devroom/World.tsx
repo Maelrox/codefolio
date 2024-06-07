@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Stats } from "@react-three/drei";
 import CameraTracker from "./CameraTracker";
@@ -51,12 +51,14 @@ const World = ({
       </button>
       <Canvas style={{ width: "100vw", height: "45vh" }}>
         <Stats className="gpu-stats" />
-        <Scene
-          setCameras={setCameras}
-          tvNumber={tvNumber}
-          textureUrl={textureUrl}
-          updateTvImages={updateTvImages}
-        />
+        <Suspense fallback={<div className="loader">Loading...</div>}>
+          <Scene
+            setCameras={setCameras}
+            tvNumber={tvNumber}
+            textureUrl={textureUrl}
+            updateTvImages={updateTvImages}
+          />
+        </Suspense>
         <CameraManager cameraToView={cameraToView} />
         {controlsEnabled && <Controls />}
         <CameraTracker

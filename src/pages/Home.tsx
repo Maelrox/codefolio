@@ -4,13 +4,13 @@ import Portfolio from "../components/Portfolio";
 import World from "../components/devroom/World";
 import Repository from "../components/Repository";
 
-const HomePage: React.FC = () => {
+const Home: React.FC = () => {
 
   const [viewName, setViewName] = useState("InitialView");
   const [tvNumber, setTvNumber] = useState("");
   const [textureUrl, setTextureUrl] = useState("/assets/3d/white.jpg");
   const [updateTvImages, setUpdateTvImages] = useState(false); //Don't update images use the default glb texture for tvs
-  const [categoryName, setCategoryName] = useState("Default");
+  const [categoryName, setCategoryName] = useState("Backend Development");
 
   const handleViewChange = (
     newView: string,
@@ -35,4 +35,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Home;

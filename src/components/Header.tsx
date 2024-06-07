@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from '../assets/common/logo-oq.png';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
 
@@ -11,11 +12,11 @@ const Header: React.FC = () => {
 
   return (
 
-    <header className="bg-main-gradient text-white p-4 flex justify-around items-center">
+    <header className="bg-main-gradient p-4 flex justify-around items-center">
       <div className="flex items-center space-x-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />
         <div className="text-2xl">
-          <a className="font-orbitron" href="#">CodeFolio</a>
+          <Link to="/" className="font-orbitron">CodeFolio</Link>
         </div>
       </div>
       <div className="flex items- space-x-4">
@@ -36,15 +37,9 @@ const Header: React.FC = () => {
           </svg>
         </button>
         <nav className={`md:flex space-x-4 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <a href="#" className="block md:inline-block hover:text-gray-400">
-            Portfolio
-          </a>
-          <a href="#" className="block md:inline-block hover:text-gray-400">
-            About
-          </a>
-          <a href="#" className="block md:inline-block hover:text-gray-400">
-            Contact
-          </a>
+          <Link to="/" className="block md:inline-block hover:text-gray-400">Portfolio</Link>
+          <Link to="/about" className="block md:inline-block hover:text-gray-400">About</Link>
+          {/* Further links can be added here */}
         </nav>
       </div>
     </header>

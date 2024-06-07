@@ -14,7 +14,7 @@
 }
 
 .portfolio-box {
-  @apply border-2 border-white rounded-lg shadow-lg text-center text-white;
+  @apply border-2 border-white rounded-lg shadow-lg text-center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
