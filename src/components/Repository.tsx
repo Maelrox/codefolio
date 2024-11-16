@@ -1,6 +1,6 @@
 import React from 'react';
 import RepositoryBox from './RepositoryBox';
-import nodejs from '../assets/home/nodejs.png';
+import nodejs from '../assets/home/nodejs.webp';
 import springboot from '../assets/home/springboot.png';
 import react from '../assets/home/react.png';
 import terraform from '../assets/home/terraform.png';

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
-import World from "../components/devroom/World";
 import Repository from "../components/Repository";
+import VirtualOffice from "../components/devroom/VirtualOffice";
 
 const Home: React.FC = () => {
 
@@ -28,9 +28,17 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header />
-      <World viewName={viewName} tvNumber={tvNumber} textureUrl={textureUrl} updateTvImages={updateTvImages} />
-      <Portfolio onViewChange={handleViewChange} />
-      <Repository category={categoryName}/>
+      <div className="flex flex-col lg:flex-row h-full">
+        <div className="flex-1 h-full">
+          <VirtualOffice viewName={viewName} tvNumber={tvNumber} textureUrl={textureUrl} updateTvImages={updateTvImages} />
+        </div>
+        <div className="flex-1 h-full">
+          <Portfolio onViewChange={handleViewChange} />
+        </div>
+      </div>
+      <div>
+        <Repository category={categoryName} />
+      </div>
     </div>
   );
 };

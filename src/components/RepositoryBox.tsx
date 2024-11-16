@@ -1,6 +1,5 @@
 import React from 'react';
 import github from '../assets/home/github.png';
-import languageBox from '../assets/home/language-box.png';
 
 interface RepositoryBoxProps {
   technologies: string;
@@ -12,9 +11,8 @@ interface RepositoryBoxProps {
 const RepositoryBox: React.FC<RepositoryBoxProps> = ({ url, text, technologies, image }) => {
   return (
     <div className="h-64 border-2 border-white rounded-lg shadow-lg text-center transform transition-transform duration-300 ease-in-out hover:rotate-y-15 hover:rotate-x-10 hover:translate-z-5 hover:shadow-2xl flex flex-col">
-      <div className="flex justify-center items-center h-1/3 relative">
-        <img className='absolute inset-0 w-full h-full object-cover' src={languageBox} alt="Language Container" />
-        <img className='relative w-1/3 max-w-16 max-h-16' src={image} alt="Tech Logo" />
+      <div className="flex justify-center items-center h-1/3 relative bg-white">
+        <img className='relative w-1/3 max-w-24 max-h-24' src={image} alt="Tech Logo" />
       </div>
       <div className="flex flex-col justify-center items-center h-1/3">
         <h3 className='text-sm'>{text}</h3>
