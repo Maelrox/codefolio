@@ -20,7 +20,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onViewChange }) => {
   return (
     <div className="h-[45vh] flex flex-wrap items-center">
       {portfolioItems.map((item, index) => (
-        <div className="w-1/3 h-1/2 flex-item flex-shrink-1 flex-grow-1" key={index} onClick={() => onViewChange(item.view, item.tv, item.textureUrl, item.text)}>
+        <div className="w-1/3 h-1/2 flex-item flex-shrink-1 flex-grow-1 border-primary-100" key={index} onClick={() => onViewChange(item.view, item.tv, item.textureUrl, item.text)}>
           <PortfolioBox key={index} icon={item.icon} text={item.text} />
         </div>
 

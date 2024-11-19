@@ -23,7 +23,7 @@ const About: React.FC = () => {
                 href="https://www.linkedin.com/in/oscar-alejandro-quiroz-aguirre"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 text-white py-2 px-4 rounded-lg shadow hover:bg-blue-700 transition"
+                className="bg-primary-100 text-white py-2 px-4 rounded-lg shadow hover:bg-primary-600 transition"
               >
                 LinkedIn
               </a>
@@ -31,7 +31,7 @@ const About: React.FC = () => {
                 href="https://github.com/morgox"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white py-2 px-4 rounded-lg shadow hover:bg-gray-900 transition"
+                className="bg-primary-100 text-white py-2 px-4 rounded-lg shadow hover:bg-primary-600 transition"
               >
                 GitHub
               </a>

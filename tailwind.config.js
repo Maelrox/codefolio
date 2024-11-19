@@ -4,20 +4,21 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        orbitron: ['Orbitron', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         primary: {
-          100: '#E2E2E2',
+          100: '#002a45',
+          600: '#01111a'
         },
-        pastelPink: '#f8e8f0',
-        pastelPurple: '#f0e8f6',
-        pastelGray: '#f1f1f2',
-        lightGray: '#e8e8e8',
-        whiteish: '#f9f9f9',
+        secondary: {
+          100: '#9ca3af'
+        },
+        orange: '#f05133'
       },
       backgroundImage: {
-        'main-gradient': 'linear-gradient(to bottom, #F9F9F9, #FFFFFF)',
+        'orange-gradient': 'linear-gradient(to left, #f05133, #b52e14)',
+        'main-gradient': 'linear-gradient(to left, #020202, #002a45)'
       },
     },
   },

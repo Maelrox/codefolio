@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <div className="flex items-center space-x-4">
         <img src={logo} alt="Logo" className="h-10 w-10" />
         <div className="text-2xl">
-          <Link to="/" className="font-orbitron">CodeFolio</Link>
+          <Link to="/" className="font-poppins text-secondary-100">Oscar Quiroz</Link>
         </div>
       </div>
       <div className="flex items- space-x-4">
@@ -37,9 +37,8 @@ const Header: React.FC = () => {
           </svg>
         </button>
         <nav className={`md:flex space-x-4 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <Link to="/" className="block md:inline-block hover:text-gray-400">Portfolio</Link>
-          <Link to="/about" className="block md:inline-block hover:text-gray-400">About</Link>
-          {/* Further links can be added here */}
+          <Link to="/" className="block md:inline-block text-secondary-100 hover:text-orange">Portfolio</Link>
+          <Link to="/about" className="block md:inline-block text-secondary-100 hover:text-orange">About</Link>
         </nav>
       </div>
     </header>

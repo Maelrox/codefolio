@@ -32,7 +32,6 @@ const VirtualOffice = ({
     }
   }, [cameras, viewName]);
 
-  //Avoid re-rendering camera tracker if the camera haven't changed its position
   const memoizedCameraPosition = useMemo(
     () => cameraPosition,
     [cameraPosition]
@@ -44,7 +43,7 @@ const VirtualOffice = ({
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 960);
     };
     checkMobile();
     window.addEventListener('resize', checkMobile);
@@ -55,7 +54,7 @@ const VirtualOffice = ({
   return (
     <div>
       <button
-        className="absolute z-10 right-0 md:right-1/2 bg-pink-700 p-2 text-white"
+        className="absolute z-10 right-0 md:right-1/2 bg-primary-100 p-2 text-white"
         onClick={toggleControls}
       >
         {controlsEnabled ? "Disable Controls" : "Enable Controls"}
